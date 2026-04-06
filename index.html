@@ -271,7 +271,7 @@ canvas{
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 30%;
+  width: 18%;
 }
 
 .convert-img img{
@@ -472,7 +472,19 @@ canvas{
   letter-spacing: 9%;
 }
 
+.visible .title{
+  color: #fff;
+  font-weight: 400;
+  font-size:25px;
+  line-height: 1.35;
+  -webkit-text-stroke: 0.1px #fff;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  letter-spacing: 9%;
+}
 
+.visible .map-btn{
+  border: none;
+}
 
 /* timeline */
 .event{
@@ -515,7 +527,13 @@ canvas{
   padding:10px 15px;
   border-radius:20px;
   border:none;
-  background:#eef1f7;
+  color: #7ea1b8;
+  font-family: 'Advent Pro', sans-serif;
+  font-size: 17px;
+  /* background:#eef1f7; */
+
+  background: linear-gradient(180deg, #eef5fb, #e3edf7);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 .group button.active{
@@ -612,33 +630,45 @@ footer{
 
 /* cinematic animation */
 
-.hero-content h1,
+.hero-content .hero-title,
 .hero-content .date,
-.hero-content div:last-child{
+.hero-content .heart,
+.hero-content .hearttw{
   opacity:0;
   transform:translateY(20px) scale(0.95);
   filter:blur(10px);
 }
 
-.hero-content div:first-child{
+/* .hero-content div:first-child{
   animation:cinematic 1.5s ease forwards;
   animation-delay:0.3s;
-}
+} */
 
 /* step 1 */
-.hero-content h1{
+/* .hero-content h1{
   animation:cinematic 1.5s ease forwards;
   animation-delay:1.9s;
+} */
+
+.hero-content .hero-title{
+  animation:cinematic 1.5s ease forwards;
+  animation-delay:0.5s;
 }
 
 /* step 2 */
 .hero-content .date{
   animation:cinematic 1.5s ease forwards;
-  animation-delay:2.4s;
+  animation-delay:1.2s;
+}
+
+.hero-content .heart,
+.hero-content .hearttw{
+  animation:cinematic 1.5s ease forwards;
+  animation-delay:1.8s;  
 }
 
 /* step 3 */
-.hero-content div:last-child{
+/* .hero-content div:last-child{
   animation:cinematic 1.5s ease forwards;
   animation-delay:3.5s;
 }
@@ -646,7 +676,7 @@ footer{
 .hearttw .heart{
   animation:cinematic 1.5s ease forwards;
   animation-delay:0.8s;
-}
+} */
 
 @keyframes cinematic{
   to{
@@ -719,9 +749,9 @@ button{
 <div class="heart"></div>
 
 <div class="hero-title">
-  <h1> <div>Wedding</div>
-
-  <div>day</div>
+  <h1> 
+    <div>Wedding</div>
+    <div>day</div>
 
   </h1>
 </div>
@@ -827,7 +857,7 @@ button{
   </div>
 </div>
 
-<div class="address-content">
+<div class="address-content reveal">
   <div class="address-wrap">
 
     <div class="address-text">
@@ -839,13 +869,13 @@ button{
   </div>
 </div>
 
-<div class="castle">
+<div class="castle reveal">
   <div class="castle-img">
     <img src="./building.jpg" alt="Дворец Бракосочетаний №1">
   </div>
 </div>
 
-<div class="meduza">
+<div class="meduza reveal">
   <div class="meduza-text">
     Будем благодарны, если Вы 
     воздержитесь от криков «Горько» 
@@ -855,7 +885,7 @@ button{
   </div>
 </div>
 
-<div class="line-heart">
+<div class="line-heart reveal">
   <div class="line-heart-wrap">
     <img src="./line-heart.png" alt="Сердечко">
   </div>
@@ -865,8 +895,8 @@ button{
 <!-- LOCATION -->
 <div class="section reveal map-wrap">
   <div class="card map-content">
-    <div class="title map-title">Место</div>
-    <p class="map-text">Английская набережная, Санкт-Петербург</p>
+    <!-- <div class="title map-title">Место</div>
+    <p class="map-text">Английская набережная, Санкт-Петербург</p> -->
     
     <div class="map">
     <iframe src="https://maps.google.com/maps?q=Английская%20набережная%20Санкт-Петербург&z=15&output=embed"></iframe>
@@ -949,7 +979,7 @@ button{
 <button>Без алкоголя</button>
 </div>
 
-<button onclick="submit()">Отправить</button>
+<button class="map-btn" onclick="submit()">Отправить</button>
 
 </div>
 </div>
