@@ -22,159 +22,6 @@ html,body{
   font-size: 16px;
 }
 
-/* ===== PRELOADER ORIGINAL STYLE ===== */
-
-/* #preloader{
-  position:fixed;
-  inset:0;
-  background:#ffffff;
-  z-index:9999;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  overflow:hidden;
-} */
-
-/* центр */
-/* .loader{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:25px;
-} */
-
-/* .loader-box{
-  width:140px;
-  height:2px;
-  background:#e5e5e5;
-  position:relative;
-  overflow:hidden;
-} */
-
-/* ЛЕВАЯ линия */
-/* .loader_bar--first{
-  position:absolute;
-  right:0;
-  top:0;
-  height:100%;
-  width:0%;
-  background:#000;
-} */
-
-/* ПРАВАЯ линия */
-/* .loader_bar--second{
-  position:absolute;
-  left:0;
-  top:0;
-  height:100%;
-  width:0%;
-  background:#000;
-} */
-
-/* вторая линия позже */
-/* .loader_bar--second{
-  animation-delay:0.2s;
-} */
-
-/* логотип MG */
-/* .loader img{
-  width:70px;
-  display: block;
-  margin:25px 0;
-} */
-
-/* проценты */
-/* .loader_text{
-  margin-top:10px;
-  font-family:'Playfair Display', serif;
-  font-size:14px;
-  letter-spacing:2px;
-  color:#000;
-} */
-
-/* цифра */
-/* .loader_text_unit{
-  font-size:18px;
-  font-weight:600;
-} */
-
-/* ===== АНИМАЦИИ ===== */
-
-/* линия заполняется */
-/* @keyframes lineLoad{
-  from{
-    width:0%;
-  }
-  to{
-    width:100%;
-  }
-} */
-
-/* @keyframes lineLeft{
-  from{
-    width:0%;
-  }
-  to{
-    width:100%;
-  }
-}
-
-@keyframes lineRight{
-  from{
-    width:0%;
-  }
-  to{
-    width:100%;
-  }
-} */
-
-/* скрытие как в оригинале */
-/* #preloader.hide{
-  transform:translateY(-100%);
-  transition:transform 1.5s ease;
-}
-
-.loader.hide{
-  opacity:0;
-  transform:translateY(-50px);
-  transition:all 1.5s ease;
-} */
-
-/* ===== MOBILE ===== */
-
-/* @media(max-width:768px){
-  .loader-box{
-    width:70px;
-  }
-
-  .loader{
-    gap:15px;
-  }
-
-  .loader img{
-    width:50px;
-  }
-}
-
-#preloader{
-  transform:translateY(0);
-}
-
-#preloader.hide{
-  transform:translateY(-100%);
-  transition:transform 1.5s ease;
-}
-
-.loader{
-  transition:all 1.5s ease;
-}
-
-.loader.hide{
-  opacity:0;
-  transform:translateY(-40px);
-} */
-
-
 /* HERO */
 .hero{
   position:relative;
@@ -260,31 +107,6 @@ h1{
   from{opacity:0; transform:translateY(20px);}
   to{opacity:1; transform:translateY(0);}
 }
-
-/* waves */
-/* .water{
-  position:absolute;
-  bottom:0;
-  width:100%;
-  height:120px;
-}
-
-.wave{
-  position:absolute;
-  width:200%;
-  height:100%;
-  background:url('https://svgshare.com/i/13pG.svg') repeat-x;
-  animation:waveMove linear infinite;
-}
-
-.wave1{animation-duration:12s; opacity:0.5;}
-.wave2{animation-duration:18s; opacity:0.3;}
-.wave3{animation-duration:25s; opacity:0.2;}
-
-@keyframes waveMove{
-  from{transform:translateX(0);}
-  to{transform:translateX(-50%);}
-} */
 
 
 /* bubbles */
@@ -1103,26 +925,6 @@ button{
 
 <body>
 
-  <!-- <div id="preloader">
-  <div class="loader">
-
-    <div class="loader-box">
-      <div class="loader_bar loader_bar--first"></div>
-    </div>
-
-    <img src="./preloader.png" alt="Ракушка">
-
-    <div class="loader-box">
-      <div class="loader_bar loader_bar--second"></div>
-    </div>
-
-    <p class="loader_text">
-      <span class="loader_text_unit">0</span>%
-    </p>
-
-  </div>
-</div> -->
-
 <!-- HERO -->
 <section class="hero">
 <div class="hero-bg"></div>
@@ -1144,11 +946,6 @@ button{
 <div class="hearttw"></div>
 </div>
 
-<!-- <div class="water">
-<div class="wave wave1"></div>
-<div class="wave wave2"></div>
-<div class="wave wave3"></div>
-</div> -->
 </section>
 
 <!-- PRIGLOS -->
@@ -1230,12 +1027,6 @@ button{
 
   </div>
 </div>
-
-<!-- <div class="castle reveal">
-  <div class="castle-img">
-    <img src="./building.jpg" alt="Дворец Бракосочетаний №1">
-  </div>
-</div> -->
 
 <div class="meduza reveal">
   <div class="meduza-text">
@@ -1328,22 +1119,21 @@ button{
 </div>
 
 
-
 </div>
 
 </footer>
 
 <div id="success" class="success">
   <div class="success-content">
-    <div class="success-title">Спасибо 🥳🐋</div>
+    <div class="success-title">Спасибо 🥳🤍</div>
     <div class="success-text">Мы с нетерпением ждем вас!</div>
   </div>
 </div>
 
 <div id="no-success" class="success">
   <div class="success-content">
-    <div class="success-title">Ну почему же нет?🐋</div>
-    <div class="success-text">До новых встреч!</div>
+    <div class="success-title">Очень жаль</div>
+    <div class="success-text"></div>
   </div>
 </div>
 
@@ -1453,30 +1243,18 @@ if (rsvp === "Смогу прийти" && drinks.length === 0) {
     return;
   }
 
-  btn.innerText = "Отправлено 🥳🐋";
+  btn.innerText = "Отправлено 🥳🐋🤍";
   btn.disabled = true;
 
   try {
 
-    // // ⚠️ ВРЕМЕННО ОТКЛЮЧИ TELEGRAM ЕСЛИ НЕ НАСТРОЕН
-  
-    // await fetch(`https://script.google.com/macros/s/AKfycbytRy-AFDbh77WNxxIZXd8EDTptbf_Ik2d8Pxmteb2t4hVuONxyB6IMWGN96lx9aspP/exec`, {
-    //   method: "POST",
-    //   headers: { "Content-Type": "application/json" },
-    //   body: JSON.stringify({
-    //     chat_id: "<438213903>",
-    //     text: `Статус: ${rsvp}, Алкоголь: ${drinks.join(", ")}`
-    //   })
-    // });
-
-    
-
-    // 8275565910:AAG9GIuvqfTO5BXyoBf9bfwxrAPu-ik91sw
 
     // конфетти
     for(let i=0;i<80;i++){
       let el=document.createElement('div');
       el.style.position='fixed';
+      el.style.zIndex = '10000'; // 👈 ВОТ СЮДА
+
       el.style.width='6px';
       el.style.height='6px';
       el.style.background='gold';
@@ -1682,17 +1460,6 @@ document.querySelectorAll('#drink button').forEach(btn=>{
 });
 
 
-
-// ===== CONFETTI ANIMATION =====
-// const style = document.createElement('style');
-// style.innerHTML = `
-// @keyframes fall{
-//   0%{transform:translateY(0);}
-//   100%{transform:translateY(300px);opacity:0;}
-// }`;
-// document.head.appendChild(style);
-
-
 // ===== TIMER =====
 const weddingDate = new Date("2026-07-07T14:30:00").getTime();
 
@@ -1747,55 +1514,6 @@ const observer = new IntersectionObserver((entries)=>{
 elements.forEach(el => observer.observe(el));
 
 });
-
-// window.addEventListener("load", function(){
-
-//   const preloader = document.getElementById("preloader");
-//   const loader = document.querySelector(".loader");
-
-//   const counter = document.querySelector(".loader_text_unit");
-
-//   const leftLine = document.querySelector(".loader_bar--first");
-//   const rightLine = document.querySelector(".loader_bar--second");
-
-//   let progress = 0;
-//   const duration = 1600;
-//   const start = performance.now();
-
-//   function animate(time){
-
-//     const elapsed = time - start;
-//     let percent = Math.min(elapsed / duration, 1);
-
-//     // easing как в premium шаблонах
-//     percent = 1 - Math.pow(1 - percent, 3);
-
-//     const value = Math.floor(percent * 100);
-
-//     // проценты
-//     counter.innerText = value;
-
-//     // линии синхронно
-//     leftLine.style.width = value + "%";
-//     rightLine.style.width = value + "%";
-
-//     if(percent < 1){
-//       requestAnimationFrame(animate);
-//     } else {
-//       finish();
-//     }
-//   }
-
-//   function finish(){
-//     setTimeout(()=>{
-//       preloader.classList.add("hide");
-//       loader.classList.add("hide");
-//     }, 300);
-//   }
-
-//   requestAnimationFrame(animate);
-
-// });
 
 </script>
 
