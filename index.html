@@ -923,8 +923,6 @@ input::placeholder {
 
 }
 
-
-
 </style>
 </head>
 
@@ -1050,7 +1048,7 @@ input::placeholder {
 <div class="title">Подтверждение</div>
 
 <div class="group" id="rsvp">
-<button>Смогу прийти</button>
+<button>Точно буду</button>
 <button>Не смогу</button>
 </div>
 
@@ -1217,7 +1215,7 @@ window.submit = function(){
   }
 
 // алкоголь обязателен ТОЛЬКО если придёт
-if (rsvp === "Смогу прийти" && drinks.length === 0) {
+if (rsvp === "Точно буду" && drinks.length === 0) {
   alert("Пожалуйста, выберите напитки");
   return;
 }
